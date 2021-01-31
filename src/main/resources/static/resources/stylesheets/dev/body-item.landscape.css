@@ -1,0 +1,50 @@
+body > div.body-item.landscape {
+    border-radius : 1rem;
+    cursor : pointer;
+    overflow : hidden;
+    position : relative;
+}
+
+body > div.body-item.landscape > div.landscape-item.bg {
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 100%;
+    background-image : url("../../images/landscape.bg.jpg");
+    background-size : cover;
+    background-position : center;
+    background-repeat : no-repeat;
+    position : absolute;
+    transition-duration : 1000ms;
+    z-index : 0;
+}
+
+body > div.body-item.landscape:hover > div.landscape-item.bg {
+    transform : scale(1.025);
+}
+
+body > div.body-item.landscape > div.landscape-item.content {
+    color : #ffffff;
+    padding : 4rem 4rem 12rem 4rem;
+    position : relative;
+    z-index : 1;
+}
+
+body > div.body-item.landscape > div.landscape-item.content > div.content-item:not(:last-child){
+    margin-bottom : 1.5rem;
+}
+
+body > div.body-item.landscape > div.landscape-item.content > div.content-item.title {
+    font-size : 2.125rem;
+    font-weight : 500;
+    line-height : 105%;
+}
+
+body > div.body-item.landscape > div.landscape-item.content > div.content-item.text {
+    font-size : 1.125rem;
+}
+
+body > div.body-item.landscape > div.landscape-item.content > div.content-item.link {
+    font-size : 1.125rem;
+    font-weight : 400;
+}

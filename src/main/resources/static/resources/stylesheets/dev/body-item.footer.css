@@ -1,0 +1,119 @@
+body > footer.body-item.footer {
+    background-color: #f0f0f0;
+    margin-bottom : 0;
+    padding: 3rem 0;
+}
+
+body > footer.body-item.footer > div.footer-item.container {
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
+
+body > footer.body-item.footer > div.footer-item.container > div.container-item.grid {
+    border-bottom: 0.0625rem solid #e0e0e0;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+body > footer.body-item.footer > div.footer-item.container > div.container-item.grid > div.grid-item > ul.grid-item-menu {
+    list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+}
+
+body > footer.body-item.footer > div.footer-item.container > div.container-item.grid > div.grid-item > ul.grid-item-menu > li:first-child {
+    cursor: default;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+body > footer.body-item.footer > div.footer-item.container > div.container-item.grid > div.grid-item > ul.grid-item-menu > li:not(:first-child) {
+    cursor: pointer;
+}
+
+body > footer.body-item.footer > div.footer-item.container > div.container-item.grid > div.grid-item > ul.grid-item-menu > li:not(:first-child):hover {
+    text-decoration: underline;
+}
+
+body > footer.body-item.footer > div.footer-item.container > div.container-item.grid > div.grid-item > ul.grid-item-menu > li:not(:last-child) {
+    margin-bottom: 0.75rem;
+}
+
+body > footer.body-item.footer > div.footer-item.container > div.container-item.copy {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+body > footer.body-item.footer > div.footer-item.container > div.container-item.copy > div.copy-item.left > div.left-item.disclaimer {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+body > footer.body-item.footer > div.footer-item.container > div.container-item.copy > div.copy-item.left > div.left-item.disclaimer > div.disclaimer-item.text {
+    cursor: pointer;
+}
+
+body > footer.body-item.footer > div.footer-item.container > div.container-item.copy > div.copy-item.left > div.left-item.disclaimer > div.disclaimer-item.text:hover {
+    text-decoration: underline;
+}
+
+body > footer.body-item.footer > div.footer-item.container > div.container-item.copy > div.copy-item.left > div.left-item.disclaimer > div.disclaimer-item.splitter {
+    width: 0.0625rem;
+    height: 0.75rem;
+    background-color: #d0d0d0;
+    margin: 0 0.75rem;
+    position: relative;
+}
+
+body > footer.body-item.footer > div.footer-item.container > div.container-item.copy > div.copy-item.stretch {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+body > footer.body-item.footer > div.footer-item.container > div.container-item.copy > div.copy-item.right {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+body > footer.body-item.footer > div.footer-item.container > div.container-item.copy > div.copy-item.right > a.right-item {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor : pointer;
+    display : block;
+    filter : brightness(2);
+}
+
+body > footer.body-item.footer > div.footer-item.container > div.container-item.copy > div.copy-item.right > a.right-item:hover {
+    filter : none;
+}
+
+body > footer.body-item.footer > div.footer-item.container > div.container-item.copy > div.copy-item.right > a.right-item:not(:last-child) {
+    margin-right : 0.75rem;
+}
+
+body > footer.body-item.footer > div.footer-item.container > div.container-item.copy > div.copy-item.right > a.right-item.instagram {
+    background-image: url("../../images/footer.container.copy.right.instagram.png");
+}
+
+body > footer.body-item.footer > div.footer-item.container > div.container-item.copy > div.copy-item.right > a.right-item.facebook {
+    background-image: url("../../images/footer.container.copy.right.facebook.png");
+}
+
+body > footer.body-item.footer > div.footer-item.container > div.container-item.copy > div.copy-item.right > a.right-item.twitter {
+    background-image: url("../../images/footer.container.copy.right.twitter.png");
+}

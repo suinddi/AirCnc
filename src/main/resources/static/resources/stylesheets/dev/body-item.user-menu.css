@@ -1,0 +1,40 @@
+body > div.body-item.user-menu {
+    min-width : 12.5rem;
+    background-color : #ffffff;
+    border-radius : 0.5rem;
+    box-shadow : 0 0 0.25rem 0.0625rem #50505050;
+    overflow: hidden;
+    opacity : 0;
+    padding : 0.3rem 0;
+    position : fixed;
+    pointer-events: none;
+    transition-duration: 200ms;
+    transform: translateY(-1rem);
+    z-index : 7;
+}
+
+body > div.body-item.user-menu.visible {
+    opacity : 1;
+    pointer-events: all;
+    transform: none;
+}
+
+body > div.body-item.user-menu > div.user-menu-item.menu {
+    cursor : pointer;
+    font-size : 0.9rem;
+    padding : 0.75rem 1.5rem;
+    user-select: none;
+}
+
+body > div.body-item.user-menu > div.user-menu-item.menu:hover {
+    background-color: #fafafa;
+}
+
+body > div.body-item.user-menu > div.user-menu-item.menu.strong {
+    font-weight : 400;
+}
+
+body > div.body-item.user-menu > div.user-menu-item.splitter {
+    border-top : 0.0625rem solid #e0e0e0;
+    margin: 0.33rem 0;
+}

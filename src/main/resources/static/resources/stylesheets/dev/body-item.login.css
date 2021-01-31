@@ -1,0 +1,121 @@
+body > div.body-item.login {
+    width : 95vw;
+    max-width : 30rem;
+    top : calc(50% - 0.5rem);
+    left : 50%;
+    background-color : #ffffff;
+    border-radius : 0.5rem;
+    box-shadow: 0 0 0.5rem 0.0625rem #50505025;
+    cursor : default;
+    opacity : 0;
+    overflow: hidden;
+    position : fixed;
+    pointer-events: none;
+    transform : translate(-50%, -50%);
+    transition-duration: 500ms;
+    user-select: none;
+    z-index : 9;
+}
+
+body > div.body-item.login.visible {
+    top : 50%;
+    opacity : 1;
+    pointer-events: all;
+}
+
+body > div.body-item.login > div.login-item.top {
+    align-items:center;
+    border-bottom:0.0625rem solid #e0e0e0;
+    display : flex;
+    justify-content: center;
+    padding : 1rem 2rem;
+}
+
+body > div.body-item.login > div.login-item.top > div.top-item.close {
+    width : 1rem;
+    height : 1rem;
+    background-image : url("../../images/login.top.close.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-right : 1rem;
+}
+
+body > div.body-item.login > div.login-item.top > div.top-item.close:hover {
+    filter: brightness(0.5);
+}
+
+body > div.body-item.login > div.login-item.top > div.top-item.title {
+    flex-grow : 1;
+    flex-shrink: 1;
+    text-align: center;
+}
+
+body > div.body-item.login > div.login-item.body {
+    padding : 2rem;
+}
+
+body > div.body-item.login > div.login-item.body > div.body-item.input > input {
+    width:100%;
+    border: 0.0625rem solid #e0e0e0;
+    box-sizing: border-box;
+    outline : none;
+    padding : 0.75rem 1rem;
+    transition-duration: 200ms;
+}
+
+body > div.body-item.login > div.login-item.body > div.body-item.input > input:focus {
+    border: 0.0625rem solid #b0b0b0;
+}
+
+body > div.body-item.login > div.login-item.body > div.body-item:not(:last-child) {
+    margin-bottom : 1rem;
+}
+
+body > div.body-item.login > div.login-item.body > div.body-item.link {
+    color : #50a0a0;
+    cursor : pointer;
+}
+
+body > div.body-item.login > div.login-item.body > div.body-item.link:hover {
+    text-decoration: underline;
+}
+
+body > div.body-item.login > div.login-item.body > div.body-item.button {
+    background-color: #f06060;
+    border-radius : 0.125rem;
+    cursor:pointer;
+    color: #ffffff;
+    padding : 0.66rem 2rem;
+    text-align: center;
+}
+
+body > div.body-item.login > div.login-item.body > div.body-item.button:hover {
+    background-color: #e05050;
+}
+
+body > div.body-item.login > div.login-item.body > div.body-item.button:active {
+    background-color: #d04040;
+}
+
+body > div.body-item.login > div.login-item.body > div.body-item.splitted {
+    align-items:center;
+    border-top : 0.0625rem solid #e0e0e0;
+    display:flex;
+    justify-content: flex-start;
+    padding-top: 1rem;
+}
+
+body > div.body-item.login > div.login-item.body > div.body-item.splitted > div.splitted-item.text {
+    margin-right : 1rem;
+}
+
+body > div.body-item.login > div.login-item.body > div.body-item.splitted > div.splitted-item.link {
+    color : #50a0a0;
+    cursor : pointer;
+}
+
+body > div.body-item.login > div.login-item.body > div.body-item.splitted > div.splitted-item.link:hover {
+    text-decoration: underline;
+}

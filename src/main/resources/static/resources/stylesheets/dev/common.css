@@ -1,0 +1,33 @@
+body {
+    font-family : 'Noto Sans KR', sans-serif;
+    font-size : 0.9rem;
+    font-weight : 300;
+    margin : 0;
+    padding : 0;
+    position : relative;
+}
+
+body.loading {
+    overflow : hidden;
+}
+
+body.scroll-blocked {
+    overflow : hidden;
+}
+
+body.preload * {
+    transition : none !important;
+}
+
+body > .size-limited {
+    left : 50%;
+    width : 90%;
+    max-width: 85rem;
+    position : relative;
+    transform : translateX(-50%);
+}
+
+body > .size-full > .container {
+    width : 90vw;
+    max-width: 85rem;
+}

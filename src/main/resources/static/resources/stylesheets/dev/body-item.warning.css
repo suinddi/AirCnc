@@ -1,0 +1,15 @@
+body > div.body-item.warning {
+    align-items : center;
+    background-color : #f5f5f5;
+    display : flex;
+    justify-content : center;
+    margin-bottom : 1.5rem;
+    padding : 1.25rem 1rem;
+    position : relative;
+}
+
+body > div.body-item.warning > a.warning-item.text {
+    cursor : pointer;
+    font-weight : 400;
+    text-decoration : underline;
+}

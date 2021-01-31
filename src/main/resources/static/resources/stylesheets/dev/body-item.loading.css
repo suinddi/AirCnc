@@ -1,0 +1,49 @@
+body > div.body-item.loading {
+    top : calc(50% - 0.5rem);
+    left : 50%;
+    align-items : center;
+    background-color : #ffffff;
+    border-radius : 0.5rem;
+    box-shadow: 0 0 0.5rem 0.0625rem #50505025;
+    cursor : default;
+    display : flex;
+    justify-content : center;
+    opacity : 0;
+    padding : 1.5rem 2rem;
+    position : fixed;
+    pointer-events: none;
+    transform : translate(-50%, -50%);
+    transition-duration: 500ms;
+    user-select: none;
+    z-index : 9;
+}
+
+body > div.body-item.loading.visible {
+    top : 50%;
+    opacity : 1;
+    pointer-events: all;
+}
+
+body > div.body-item.loading > div.loading-item.icon {
+    width : 1.5rem;
+    height : 1.5rem;
+    animation-name: animation-loading-icon;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    background-image: url("../../images/loading.icon.png");
+    background-size: 100%;
+    background-position : center;
+    background-repeat: no-repeat;
+    filter : brightness(1.5);
+    margin-right : 1rem;
+}
+
+@keyframes animation-loading-icon {
+    0% {
+        transform : rotate(0deg);
+    }
+    100% {
+        transform : rotate(360deg);
+    }
+}
